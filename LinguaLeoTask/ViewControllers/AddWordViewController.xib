@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWordViewController">
+            <connections>
+                <outlet property="textField" destination="s7s-aX-Iks" id="9Yh-vI-EIR"/>
+                <outlet property="translateButton" destination="HfQ-Gf-X7Z" id="d3y-gu-1u1"/>
+                <outlet property="translateTextView" destination="1vD-vf-qXE" id="vqi-1h-WFI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="s7s-aX-Iks">
+                    <rect key="frame" x="8" y="8" width="514" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfQ-Gf-X7Z">
+                    <rect key="frame" x="530" y="8" width="62" height="30"/>
+                    <state key="normal" title="Translate">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="translateClicked:" destination="-1" eventType="touchUpInside" id="7P0-G3-iRD"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiu" translatesAutoresizingMaskIntoConstraints="NO" id="1vD-vf-qXE">
+                    <rect key="frame" x="8" y="46" width="584" height="546"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HfQ-Gf-X7Z" firstAttribute="height" secondItem="s7s-aX-Iks" secondAttribute="height" id="6hE-aK-d4c"/>
+                <constraint firstItem="s7s-aX-Iks" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="9lb-Xz-Vjv"/>
+                <constraint firstItem="HfQ-Gf-X7Z" firstAttribute="leading" secondItem="s7s-aX-Iks" secondAttribute="trailing" constant="8" id="GYj-yT-ioq"/>
+                <constraint firstItem="1vD-vf-qXE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="MgF-mF-G02"/>
+                <constraint firstItem="s7s-aX-Iks" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="YeS-8P-56S"/>
+                <constraint firstItem="1vD-vf-qXE" firstAttribute="top" secondItem="s7s-aX-Iks" secondAttribute="bottom" constant="8" id="ZzU-ry-Rdv"/>
+                <constraint firstAttribute="trailing" secondItem="HfQ-Gf-X7Z" secondAttribute="trailing" constant="8" id="dMb-5I-YXn"/>
+                <constraint firstAttribute="bottom" secondItem="1vD-vf-qXE" secondAttribute="bottom" constant="8" id="egV-qm-ijf"/>
+                <constraint firstAttribute="trailing" secondItem="1vD-vf-qXE" secondAttribute="trailing" constant="8" id="vH3-yJ-3cX"/>
+                <constraint firstItem="HfQ-Gf-X7Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="zpO-1M-RRK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

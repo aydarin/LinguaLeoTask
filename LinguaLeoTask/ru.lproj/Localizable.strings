@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  LinguaLeoTask
+
+  Created by Aydar Mukhametzyanov on 27/11/14.
+  Copyright (c) 2014 Aydar Mukhametzyanov. All rights reserved.
+*/
+
+"TRANSLATE_BUTTON" = "Перевести";
+"TRANSLATE_TITLE" = "Перевод";
+"LIST_TITLE" = "Словарь";
+"OK" = "Oк";
+"TRANSLATE_ERROR_MESSAGE" = "Произошла неизвестная ошибка. Пожалуйста, попробуйте повторить операцию позже.";
+"NO_INTERNET_CONNECTION" = "Отсутствует соединение с интернетом.";
+"SAVING_ERROR" = "Произошла ошибка операции сохранения.";
